@@ -17,7 +17,8 @@ def restaurant_list(request):
             'Name: ': rest.name,
             'Description': rest.describtion,
             'opening time': rest.opening_time,
-            'closing_time': rest.closing_time
+            'closing_time': rest.closing_time,
+            "logo": rest.logo,
         })
     return JsonResponse(my_resturant, safe=False)
 
